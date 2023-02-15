@@ -44,11 +44,10 @@ defmodule Mix.Tasks.LeetcodeElixir.PalindromeLinkedList do
     end
 
     defp reverse(%ListNode{next: nil} = l1, prev),
-      do: %ListNode{l1 | next: prev}
+      do: Map.put(l1, :next, prev)
 
     defp reverse(head, prev) do
-      next = %ListNode{head | next: prev}
-      reverse(head.next, next)
+      reverse(head.next, Map.put(head, :next, prev))
     end
 
     @shortdoc "Compare linked list"
