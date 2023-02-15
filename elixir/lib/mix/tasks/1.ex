@@ -1,4 +1,4 @@
-defmodule Mix.Tasks.LeetcodeElixir.AddTwoNumbers do
+defmodule Mix.Tasks.LeetcodeElixir.TwoSum do
   use Mix.Task
 
   defmodule Solution do
@@ -19,8 +19,7 @@ defmodule Mix.Tasks.LeetcodeElixir.AddTwoNumbers do
     end
   end
 
-  @shortdoc "Add two numbers"
-
+  @shortdoc "Two sum"
   def run(_args) do
     IO.puts('result for [1, 3], 4')
     IO.inspect(Solution.two_sum([1, 3], 4))
