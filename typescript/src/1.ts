@@ -10,6 +10,6 @@ function twoSum(nums: number[], target: number): number[] {
       elementExists.set(cur, curIndex);
     }
   }
+
   return [NaN, NaN];
 }
-
