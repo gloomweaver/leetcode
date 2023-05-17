@@ -3,8 +3,8 @@ import { test } from "node:test";
 
 import { twoSum } from "../1";
 
-test("1", (t) => {
-  t.test("case 1", () => {
+test("1", async (t) => {
+  await t.test("case 1", () => {
     const nums = [2, 7, 11, 15];
     const target = 9;
     const expected = [0, 1];
