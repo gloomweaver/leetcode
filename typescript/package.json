@@ -1,10 +1,15 @@
 {
   "main": "index.js",
-  "scripts": {},
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "scripts": {
+    "test": "node --require ts-node/register --test ./src/__tests__/*.test.ts",
+    "test:watch": "node --require ts-node/register --test --watch ./src/__tests__/*.test.ts"
+  },
   "devDependencies": {
+    "@types/node": "^20.1.7",
+    "ts-node": "^10.9.1",
     "typescript": "^5.0.4"
   }
 }
