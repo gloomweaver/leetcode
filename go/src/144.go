@@ -1,17 +1,17 @@
 package main
 
-func recurseTraversal(root *TreeNode, res *[]int) {
+func recursePreorderTraversal(root *TreeNode, res *[]int) {
 	if root == nil {
 		return
 	}
 
 	*res = append(*res, root.Val)
-	recurseTraversal(root.Left, res)
-	recurseTraversal(root.Right, res)
+	recursePreorderTraversal(root.Left, res)
+	recursePreorderTraversal(root.Right, res)
 }
 
 func preorderTraversal(root *TreeNode) []int {
 	res := []int{}
-	recurseTraversal(root, &res)
+	recursePreorderTraversal(root, &res)
 	return res
 }
