@@ -1,4 +1,10 @@
-package main
+package postorder_traversal
+
+type TreeNode struct {
+	Val   int
+	Left  *TreeNode
+	Right *TreeNode
+}
 
 func recursePostOrderTraversal(root *TreeNode, res *[]int) {
 	if root == nil {

@@ -1,4 +1,10 @@
-package main
+package preorder_traversal
+
+type TreeNode struct {
+	Val   int
+	Left  *TreeNode
+	Right *TreeNode
+}
 
 func recursePreorderTraversal(root *TreeNode, res *[]int) {
 	if root == nil {

@@ -1,4 +1,4 @@
-package main
+package search_insert
 
 func binarySearch(nums []int, left int, right int, target int) int {
 	if left >= right {

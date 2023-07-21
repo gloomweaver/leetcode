@@ -1,4 +1,4 @@
-package main
+package remove_element
 
 func removeElement(nums []int, val int) int {
 	curIdx := 0
