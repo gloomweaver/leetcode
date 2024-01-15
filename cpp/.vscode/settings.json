@@ -53,6 +53,7 @@
     "variant": "cpp",
     "vector": "cpp",
     "algorithm": "cpp",
-    "iostream": "cpp"
+    "iostream": "cpp",
+    "map": "cpp"
   }
 }
