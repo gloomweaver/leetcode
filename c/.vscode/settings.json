@@ -56,6 +56,7 @@
     "algorithm": "cpp",
     "iostream": "cpp",
     "map": "cpp",
-    "math.h": "c"
+    "math.h": "c",
+    "stdlib.h": "c"
   }
 }
