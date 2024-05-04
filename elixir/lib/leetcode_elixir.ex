@@ -1,2 +1,0 @@
-defmodule LeetcodeElixir do
-end
